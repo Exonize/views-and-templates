@@ -1,8 +1,8 @@
 module.exports = (app) => {
    app.get('/', (req, res, next) => {
-      res.render('home', {
-         "title":"Homepage"
-      });
+      res.render('home', {"title":"Homepage"});
+      res.send()
+      console.log("Home")
    });
 
    app.get('/produkt', (req, res, next) => {
